@@ -1,0 +1,14 @@
+[
+    {
+        "id": "light",
+        "iconColor": "tomato"
+    },
+    {
+        "id": "dark",
+        "iconColor": "#000"
+    },
+    {
+        "id": "blue",
+        "iconColor": "blue"
+    }
+]

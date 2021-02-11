@@ -1,0 +1,41 @@
+{
+	"name": "how-to-install",
+	"author": "Stas Kardash (@RealPeha) real.peha@gmail.com",
+	"private": true,
+	"version": "0.1.0",
+	"license": "0BSD",
+	"scripts": {
+		"build": "gatsby build",
+		"dev": "yarn clean && gatsby develop",
+		"deploy": "gatsby build --prefix-paths && gh-pages -d public",
+		"format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+		"start": "npm run develop",
+		"serve": "gatsby serve",
+		"clean": "gatsby clean"
+	},
+	"dependencies": {
+		"gatsby": "^2.26.1",
+		"gatsby-plugin-catch-links": "^2.10.0",
+		"gatsby-plugin-react-helmet": "^3.9.0",
+		"gatsby-remark-autolink-headers": "^2.9.0",
+		"gatsby-source-filesystem": "^2.8.1",
+		"gatsby-transformer-remark": "^2.13.1",
+		"github-slugger": "^1.3.0",
+		"prismjs": "^1.23.0",
+		"qs": "^6.9.4",
+		"react": "^16.12.0",
+		"react-dom": "^16.12.0",
+		"react-helmet": "^6.1.0"
+	},
+	"devDependencies": {
+		"gh-pages": "^3.1.0",
+		"prettier": "^2.2.1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/RealPehha/how-to-install"
+	},
+	"bugs": {
+		"url": "https://github.com/RealPehha/how-to-install/issues"
+	}
+}
