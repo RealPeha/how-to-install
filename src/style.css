@@ -43,7 +43,8 @@
 }
 
 .light {
-	--page-background: linear-gradient(to right, #2b5876, #4e4376);
+	--page-background: linear-gradient(135deg,#0e3c5a 0%,#650041 90%);
+	/* linear-gradient(to right, #2b5876, #4e4376); */
 	/* linear-gradient(135deg, rgba(154,57,163,1) 0%, rgba(65,103,168,1) 100%); */
 	--page-color: #fff;
 	--search-button-background: #f44336;
