@@ -1,47 +1,7 @@
-import React, { useState, useMemo, useEffect, useCallback } from 'react'
-import { navigate, Link } from 'gatsby'
+import React, { useState, useMemo } from 'react'
+import { navigate } from 'gatsby'
 
-const clamp = (n, min, max) => Math.min(Math.max(n, min), max)
-
-const Suggestion = ({ item, isActive }) => {
-	return (
-		<Link to={item.slug} className="suggestion">
-			{isActive ? <b>{item.title}</b> : item.title}
-		</Link>
-	)
-}
-
-const Suggestions = ({ items }) => {
-	const [activeSuggestion, setActiveSuggestion] = useState(-1)
-
-	// useEffect(() => {
-	// 	const handleKeyDown = (e) => {
-	// 		if (e.key === 'ArrowUp') {
-	// 			setActiveSuggestion(n => clamp(n - 1, 0, items.length - 1))
-	// 		} else if (e.key === 'ArrowDown') {
-	// 			setActiveSuggestion(n => clamp(n + 1, 0, items.length - 1))
-	// 		} else if (e.key === 'Enter' && items && items[activeSuggestion]) {
-	// 			navigate(items[activeSuggestion].slug)
-	// 		}
-	// 	}
-
-	// 	document.addEventListener('keydown', handleKeyDown)
-
-	// 	return () => document.removeEventListener('keydown', handleKeyDown)
-	// }, [items.length])
-
-	return (
-		<div className="suggestions" id="suggestions">
-			{items.map((item, index) => (
-				<Suggestion
-					key={item.slug}
-					item={item}
-					isActive={index === activeSuggestion}
-				/>
-			))}
-		</div>
-	)
-}
+import Suggestions from './Suggestions'
 
 const titles = {
 	MaybeThis: 'Maybe this...',
@@ -105,9 +65,9 @@ const HeaderSearch = ({ pages = [], query = '', className = '' }) => {
 
 		if (
 			inputValue &&
-			(!e.relatedTarget || e.relatedTarget.className !== 'suggestion')
+			(!e.relatedTarget || !e.relatedTarget.className.includes('suggestion'))
 		) {
-			// setSuggestions([])
+			setSuggestions([])
 		} else if (!e.relatedTarget || e.relatedTarget.id !== 'find') {
 			setInputMaybeValue('')
 			setInputPlaceholder(titles.MaybeThis)
