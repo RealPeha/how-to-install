@@ -391,6 +391,12 @@ a {
 .line-wrapper a {
 	text-decoration: none;
     color: var(--code-link-color, #ccc);
+	border-bottom: 1px solid var(--code-link-color, #ccc);
+}
+
+.line-wrapper a:hover {
+    font-weight: bold;
+    border-width: 2px;
 }
 
 .copy-button {
