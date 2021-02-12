@@ -1,8 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 
-import '../style.css'
-
 import App from '../App'
 import HeaderSearch from '../components/HeaderSearch'
 

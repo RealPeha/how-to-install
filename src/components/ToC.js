@@ -5,13 +5,14 @@ import Slugger from 'github-slugger'
 const ToC = ({ headings, maxDepth = 1 }) => {
 	const slugger = Slugger()
 
+	const filteredHeadings = headings.filter(({ depth }) => depth <= maxDepth)
+
 	return (
-		<div className="toc">
-			<div className='toc-menu'>
-				{
-					headings
-						.filter(({ depth }) => depth <= maxDepth)
-						.map(({ value }) => {
+		<div className="toc-wrapper">
+			<div className="toc">
+				{filteredHeadings.length > 1 ? (
+					<div className="toc-menu">
+						{filteredHeadings.map(({ value }) => {
 							const slug = slugger.slug(value)
 
 							return (
@@ -19,10 +20,11 @@ const ToC = ({ headings, maxDepth = 1 }) => {
 									{value}
 								</Link>
 							)
-						})
-				}
+						})}
+					</div>
+				) : null}
 			</div>
-			<div className='toc-open'>Table of Contents</div>
+			<div className="toc-open">Table of Contents</div>
 		</div>
 	)
 }
