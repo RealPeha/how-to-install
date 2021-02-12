@@ -4,7 +4,7 @@ title: 'Git'
 keywords: 'git'
 ---
 
-# Debian / Ubuntu
+# Ubuntu / Debian
 
 ---
 

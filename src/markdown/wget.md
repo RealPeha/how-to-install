@@ -4,7 +4,7 @@ title: 'wget'
 keywords: 'wget'
 ---
 
-# Debian / Ubuntu
+# Ubuntu / Debian
 
 ---
 
@@ -12,6 +12,6 @@ keywords: 'wget'
 
 ```bash
 sudo apt update # Refresh your local package index
-sudo apt install wget # Install Git
+sudo apt install wget # Install wget
 wget --version # Check that the install was successful
 ```

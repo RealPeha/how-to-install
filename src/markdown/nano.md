@@ -4,7 +4,7 @@ title: 'Nano'
 keywords: 'nano, text editor'
 ---
 
-# Debian / Ubuntu
+# Ubuntu / Debian
 
 ---
 
@@ -12,7 +12,7 @@ keywords: 'nano, text editor'
 
 ```bash
 sudo apt update # Refresh your local package index
-sudo apt-get install nano # Install nano
+sudo apt install nano # Install Nano
 nano --version # Check that the install was successful
 ```
 

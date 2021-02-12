@@ -4,14 +4,15 @@ title: 'Vim'
 keywords: 'vim, text editor'
 ---
 
-# Ubuntu 20.04
+# Ubuntu / Debian
 
 ---
 
 ## # Using apt
 
 ```bash
+sudo add-apt-repository ppa:jonathonf/vim
 sudo apt update # Refresh your local package index
-sudo apt install vim # Install Git
+sudo apt install vim # Install Vim
 vim --version # Check that the install was successful
 ```
