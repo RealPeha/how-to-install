@@ -33,7 +33,11 @@ const Suggestions = ({ items }) => {
 	return (
 		<div className="suggestions" id="suggestions">
 			{items.map((item, index) => (
-				<Suggestion key={item.slug} item={item} isActive={index === activeSuggestion}/>
+				<Suggestion
+					key={item.slug}
+					item={item}
+					isActive={index === activeSuggestion}
+				/>
 			))}
 		</div>
 	)

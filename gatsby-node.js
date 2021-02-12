@@ -18,11 +18,9 @@ exports.createPages = ({ actions, graphql }) => {
 			return Promise.reject(errors)
 		}
 
-		const template = require.resolve('./src/templates/PageTemplate.js')
+		const template = require.resolve('./src/PageTemplate.js')
 
-		const pages = data.allMarkdownRemark.edges
-
-		return pages.forEach(({ node }) => {
+		return data.allMarkdownRemark.edges.forEach(({ node }) => {
 			const {
 				frontmatter: { slug },
 			} = node
