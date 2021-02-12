@@ -120,6 +120,10 @@ a {
   display: flex;
 }
 
+.disable-overflow {
+	overflow: hidden;
+}
+
 .disable-flex-grow {
 	flex-grow: 0;
 }
@@ -345,6 +349,14 @@ a {
 
 	.input-wrapper input[type="text"] {
 		font-size: 1.3rem;
+	}
+
+	.install-guide h1 {
+		font-size: 1.7rem;
+	}
+
+	.install-guide h2 {
+		font-size: 1.2rem;
 	}
 }
 

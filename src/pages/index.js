@@ -10,7 +10,7 @@ const Index = ({ data }) => {
 	)
 
 	return (
-		<App>
+		<App className='disable-overflow'>
 			<HeaderSearch pages={pages} />
 			{/* <div><p>Text</p></div> */}
 		</App>

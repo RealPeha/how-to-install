@@ -4,7 +4,7 @@ const dedent = require('dedent')
 const loadPrismLanguage = require('./load-prism-language')
 
 const defaultReplacer = (title, url) =>
-	`<a href="${url || `/${title}`}">${title}</a>`
+	`<a href="${url || `${title}`}">${title}</a>`
 
 const replaceMarkdownLinks = (line, replacer = defaultReplacer) => {
 	const links = line.match(/\@.*?\@/g)

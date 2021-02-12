@@ -69,11 +69,13 @@ const HeaderSearch = ({ pages = [], query = '', className = '' }) => {
 	)
 
 	const findPages = value => {
+		value = value.toLowerCase()
+
 		const foundPages = pages.filter(page => {
 			return (
 				page.keywords
 					.split(',')
-					.some(keyword => keyword.trim().indexOf(value) > -1) &&
+					.some(keyword => keyword.trim().toLowerCase().indexOf(value) > -1) &&
 				page.slug !== `/${query}`
 			)
 		})
@@ -105,7 +107,7 @@ const HeaderSearch = ({ pages = [], query = '', className = '' }) => {
 			inputValue &&
 			(!e.relatedTarget || e.relatedTarget.className !== 'suggestion')
 		) {
-			setSuggestions([])
+			// setSuggestions([])
 		} else if (!e.relatedTarget || e.relatedTarget.id !== 'find') {
 			setInputMaybeValue('')
 			setInputPlaceholder(titles.MaybeThis)

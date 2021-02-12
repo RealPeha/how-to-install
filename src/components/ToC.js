@@ -7,22 +7,24 @@ const ToC = ({ headings, maxDepth = 1 }) => {
 
 	const filteredHeadings = headings.filter(({ depth }) => depth <= maxDepth)
 
+	if (filteredHeadings.length <= 1) {
+		return <div className="toc-wrapper"></div>
+	}
+
 	return (
 		<div className="toc-wrapper">
 			<div className="toc">
-				{filteredHeadings.length > 1 ? (
-					<div className="toc-menu">
-						{filteredHeadings.map(({ value }) => {
-							const slug = slugger.slug(value)
+				<div className="toc-menu">
+					{filteredHeadings.map(({ value }) => {
+						const slug = slugger.slug(value)
 
-							return (
-								<Link key={slug} to={`#${slug}`}>
-									{value}
-								</Link>
-							)
-						})}
-					</div>
-				) : null}
+						return (
+							<Link key={slug} to={`#${slug}`}>
+								{value}
+							</Link>
+						)
+					})}
+				</div>
 			</div>
 			<div className="toc-open">Table of Contents</div>
 		</div>
