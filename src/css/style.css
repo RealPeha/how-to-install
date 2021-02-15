@@ -361,6 +361,7 @@ a {
 
 .line-wrapper {
 	display: flex;
+	white-space: normal;
 }
 
 .line-wrapper a {
@@ -377,6 +378,7 @@ a {
 .copy-button {
     background-image: url(../icons/copy.svg);
     width: 13px;
+    height: 21px;
 	min-width: 13px;
 	filter: invert(50%);
     background-size: 100%;
@@ -385,6 +387,7 @@ a {
 	cursor: pointer;
 	z-index: 2;
 	margin-right: 4px;
+	align-self: flex-start;
 }
 
 .copy-button:hover {

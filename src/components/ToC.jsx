@@ -8,7 +8,7 @@ const ToC = ({ headings, maxDepth = 1 }) => {
 	const filteredHeadings = headings.filter(({ depth }) => depth <= maxDepth)
 
 	if (filteredHeadings.length <= 1) {
-		return <div className="toc-wrapper"></div>
+		return <div className="toc-wrapper" />
 	}
 
 	return (

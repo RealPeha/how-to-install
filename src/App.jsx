@@ -1,4 +1,6 @@
-import React, { useState } from 'react'
+import React from 'react'
+
+import classes from './utils/classes'
 
 // import ThemeSelector from './components/ThemeSelector'
 
@@ -7,7 +9,7 @@ const App = ({ children, className = '' }) => {
 
 	return (
 		// <div className={`page-wrapper ${theme}`}>
-		<div className={`page-wrapper light ${className}`}>
+		<div className={classes(['page-wrapper', 'light', className])}>
 			{/* <ThemeSelector onSelect={theme => setTheme(theme)} theme={theme} /> */}
 			{children}
 		</div>

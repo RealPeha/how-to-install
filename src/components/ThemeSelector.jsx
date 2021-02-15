@@ -1,4 +1,7 @@
+/* eslint-disable */
 import React, { useState } from 'react'
+
+import classes from '../utils/classes'
 
 import allThemes from '../themes.json'
 
@@ -22,14 +25,14 @@ const ThemeSelector = ({ theme, onSelect }) => {
 					return (
 						<div
 							key={id}
-							className={`theme ${collapsed ? 'collapsed' : ''}`}
+							className={classes([theme, collapsed && 'collapsed'])}
 							style={{
 								background: iconColor,
 								top: `${index * 40}px`,
 								zIndex: theme === id ? 1 : 0,
 							}}
 							onClick={() => handleSelect(id)}
-						></div>
+						/>
 					)
 				})}
 		</div>

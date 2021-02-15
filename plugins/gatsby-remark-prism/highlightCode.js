@@ -1,12 +1,11 @@
 const Prism = require('prismjs')
 
-const loadLanguage = require('./loadLanguage')
 const replaceLinks = require('./replaceLinks')
 
 const highlightCode = (language, code) => {
 	if (!Prism.languages[language]) {
 		try {
-			loadLanguage(language)
+			require(`prismjs/components/prism-${language}.js`)
 		} catch (e) {
 			return code
 		}
@@ -20,7 +19,6 @@ const highlightCode = (language, code) => {
 		.split('\n')
 		.map(highlightedLine => {
 			const lineWithLinks = replaceLinks(highlightedLine)
-
 			const cleanLine = replaceLinks(highlightedLine, title => title)
 				.replace(/<\/?[^>]+(>|$)/g, '')
 				.replace(/\#.+/g, `$'`)

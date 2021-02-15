@@ -41,7 +41,7 @@ const PageTemplate = ({ data, pageContext }) => {
 					</div>
 				</div>
 
-				<div className="empty-column"></div>
+				<div className="empty-column" />
 			</div>
 		</App>
 	)

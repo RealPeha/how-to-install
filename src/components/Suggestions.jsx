@@ -1,11 +1,15 @@
 import React, { useState, useEffect } from 'react'
 import { navigate, Link } from 'gatsby'
 
-const clamp = (n, min, max) => Math.min(Math.max(n, min), max)
+import clamp from '../utils/clamp'
+import classes from '../utils/classes'
 
 const Suggestion = ({ item, isActive }) => {
 	return (
-		<Link to={item.slug} className={`suggestion ${isActive ? 'active' : ''}`}>
+		<Link
+			to={item.slug}
+			className={classes(['suggestion', isActive && 'active'])}
+		>
 			{item.title}
 		</Link>
 	)
@@ -17,20 +21,20 @@ const Suggestions = ({ items }) => {
 	useEffect(() => {
 		setActiveSuggestion(-1)
 
-		const handleKeyDown = (e) => {
+		const handleKeyDown = e => {
 			setActiveSuggestion(n => {
 				if (e.key === 'ArrowUp') {
 					return clamp(n - 1, 0, items.length - 1)
 				}
-				
+
 				if (e.key === 'ArrowDown') {
 					return clamp(n + 1, 0, items.length - 1)
 				}
-				
+
 				if (e.key === 'Enter' && items && items[n]) {
 					navigate(items[n].slug)
 				}
-	
+
 				return n
 			})
 		}

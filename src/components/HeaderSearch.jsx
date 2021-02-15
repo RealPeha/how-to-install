@@ -1,6 +1,8 @@
 import React, { useState, useMemo } from 'react'
 import { navigate } from 'gatsby'
 
+import classes from '../utils/classes'
+
 import Suggestions from './Suggestions'
 
 const titles = {
@@ -17,28 +19,24 @@ const HeaderSearch = ({ pages = [], query = '', className = '' }) => {
 	const [suggestions, setSuggestions] = useState([])
 
 	const keywords = useMemo(
-		() =>
-			pages.flatMap(page => {
-				const keywords = page.keywords
-					.split(',')
-					.map(keyword => keyword.trim())
+		() => pages.flatMap(page => {
+			const keywords = page.keywords
+				.split(',')
+				.map(keyword => keyword.trim())
 
-				return keywords.length > 1 ? [] : keywords
-			}),
+			return keywords.length > 1 ? [] : keywords
+		}),
 		[pages],
 	)
 
 	const findPages = value => {
 		value = value.toLowerCase()
 
-		const foundPages = pages.filter(page => {
-			return (
-				page.keywords
-					.split(',')
-					.some(keyword => keyword.trim().toLowerCase().indexOf(value) > -1) &&
-				page.slug !== `/${query}`
-			)
-		})
+		const foundPages = pages.filter(page => (
+			page.keywords
+				.split(',')
+				.some(keyword => keyword.trim().toLowerCase().indexOf(value) > -1) && page.slug !== `/${query}`
+		))
 
 		foundPages.length = Math.min(foundPages.length, 5)
 
@@ -51,8 +49,7 @@ const HeaderSearch = ({ pages = [], query = '', className = '' }) => {
 
 			setSuggestions(foundPages)
 		} else {
-			const randomTool =
-				keywords[Math.floor(Math.random() * keywords.length)]
+			const randomTool = keywords[Math.floor(Math.random() * keywords.length)]
 
 			setInputMaybeValue(randomTool)
 			setInputPlaceholder(`${randomTool}?`)
@@ -64,8 +61,8 @@ const HeaderSearch = ({ pages = [], query = '', className = '' }) => {
 		setButtonTitle(titles.This)
 
 		if (
-			inputValue &&
-			(!e.relatedTarget || !e.relatedTarget.className.includes('suggestion'))
+			inputValue
+			&& (!e.relatedTarget || !e.relatedTarget.className.includes('suggestion'))
 		) {
 			setSuggestions([])
 		} else if (!e.relatedTarget || e.relatedTarget.id !== 'find') {
@@ -110,7 +107,7 @@ const HeaderSearch = ({ pages = [], query = '', className = '' }) => {
 	}
 
 	return (
-		<div className={`header-wrapper ${className}`}>
+		<div className={classes(['header-wrapper', className])}>
 			<div className="header">
 				<h1>What do you want to install?</h1>
 				<h2>I want to install...</h2>

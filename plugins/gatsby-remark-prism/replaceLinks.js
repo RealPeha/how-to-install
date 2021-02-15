@@ -1,7 +1,5 @@
 const defaultReplacer = (title, url) =>
-	`<a href="${
-		url || `${title}`
-	}" title="How to install ${title}">${title}</a>`
+	`<a href="${url || `${title}`}" title="How to install ${title}">${title}</a>`
 
 const replaceLinks = (line, replacer = defaultReplacer) => {
 	const links = line.match(/\@.*?\@/g)
