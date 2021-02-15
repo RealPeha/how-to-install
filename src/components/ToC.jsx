@@ -3,8 +3,6 @@ import Slugger from 'github-slugger'
 
 import classes from '../utils/classes'
 
-const halfWindowHeight = window.innerHeight / 2
-
 const ToC = ({ headings, maxDepth = 1 }) => {
 	const [isSticky, setSticky] = useState(false)
 
@@ -20,7 +18,7 @@ const ToC = ({ headings, maxDepth = 1 }) => {
 			const tocHeight = tocMenuRef.current.getBoundingClientRect().height
 			const tocWrapperOffsetTop = tocMenuWrapperRef.current.getBoundingClientRect().top
 
-			const isSticky = tocWrapperOffsetTop <= halfWindowHeight - tocHeight / 2 - 50
+			const isSticky = tocWrapperOffsetTop <= window.innerHeight / 2 - tocHeight / 2 - 50
 
 			setSticky(isSticky)
 		}
