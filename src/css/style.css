@@ -33,30 +33,10 @@ a {
 	text-decoration: none;
 }
 
-.dark {
-	--page-background: #000;
-	--page-color: #fff;
-	--search-button-background: #f44336;
-	--search-button-color: #fff;
-	--search-button-border: none;
-	--search-input-background: #fff;
-	--search-input-color: #fff;
-	--search-input-border: none;
-	--suggestions-background: #fff;
-	--suggestions-item-color: #000;
-	--suggestions-item-color-hover: #e4e4e4;
-	--install-guide-background: #fff;
-	--install-guide-color: #000;
-	--install-guide-shadow: none;
-	--menu-background: #fff;
-	--menu-item-color: #000;
-	--code-link-color: #ccc;
-}
+.dark {}
 
 .light {
 	--page-background: linear-gradient(135deg,#0e3c5a 0%,#650041 90%);
-	/* linear-gradient(to right, #2b5876, #4e4376); */
-	/* linear-gradient(135deg, rgba(154,57,163,1) 0%, rgba(65,103,168,1) 100%); */
 	--page-color: #fff;
 	--search-button-background: #f44336;
 	--search-button-color: #fff;
@@ -69,11 +49,15 @@ a {
 	--suggestions-item-color-hover: #e4e4e4;
 	--install-guide-background: #fff;
 	--install-guide-color: #000;
-	--install-guide-shadow: none;
-	--menu-background: #fff;
-	--menu-item-color: #000;
-	--menu-item-color-hover: #000;
+	--install-guide-shadow: rgb(0 0 0 / 55%) 0px 8px 16px;
+	--toc-background: #fff;
+	--toc-shadow: rgb(0 0 0 / 55%) 0px 8px 16px;
+	--toc-item-color: #000;
+	--toc-item-color-hover: #000;
 	--code-link-color: tomato;
+	--code-link-color-hover: tomato;
+	--code-link-border: 1px solid var(--code-link-color, #ccc);
+	--code-link-border-hover: 1px solid var(--code-link-color-hover, #ccc);
 }
 
 .page-wrapper {
@@ -81,7 +65,7 @@ a {
 	min-height: 100%;
 	display: flex;
 	font-family: 'Montserrat Alternates', sans-serif;
-	background: var(--page-background, #00bcd4);
+	background: var(--page-background, #0e3c5a);
 	color: var(--page, #fff);
 	flex-direction: column;
 	justify-content: center;
@@ -231,35 +215,47 @@ a {
 .toc-wrapper {
 	flex-basis: 20%;
     display: flex;
-    justify-content: flex-end;
+	justify-content: flex-end;
+    align-items: flex-start;
+	position: relative;
+	padding-top: 50px;
+	padding-right: 20px;
+}
+
+.toc-wrapper.sticky {
     align-items: center;
 }
 
-.toc {
-    position: fixed;
+.toc-wrapper.sticky .toc {
+	position: fixed;
 	top: 0;
     bottom: 0;
     z-index: 5;
 }
 
+.toc-wrapper.sticky .toc-menu {
+    position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
 .toc-menu {
     display: flex;
     flex-direction: column;
-    background: var(--menu-background, #fff);
+    background: var(--toc-background, #fff);
     padding: 10px;
     font-size: 1.3rem;
-	top: 50%;
-	transform: translateY(-50%);
-    position: absolute;
 	white-space: nowrap;
 	transition: right 100ms, left 100ms;
-	right: 20px;
 	width: 170px;
+	border-radius: 5px;
+	box-shadow: var(--toc-shadow, none);
 }
 
 .toc-menu a {
 	text-decoration: none;
-    color: var(--menu-item-color, #000);
+    color: var(--toc-item-color, #000);
     margin: 3px 0;
     position: relative;
     transition: left 100ms;
@@ -271,7 +267,7 @@ a {
 .toc-menu a:hover {
 	left: 5px;
 	font-weight: bold;
-	color: var(--menu-item-color-hover, #000)
+	color: var(--toc-item-color-hover, #000)
 }
 
 .toc-open {
@@ -367,12 +363,13 @@ a {
 .line-wrapper a {
 	text-decoration: none;
     color: var(--code-link-color, #ccc);
-	border-bottom: 1px solid var(--code-link-color, #ccc);
+	border-bottom: var(--code-link-border, none);
 }
 
 .line-wrapper a:hover {
     font-weight: bold;
-    border-width: 2px;
+	color: var(--code-link-color-hover, var(--code-link-color, #ccc));
+	border-bottom: var(--code-link-border-hover, var(--code-link-border, none));
 }
 
 .copy-button {

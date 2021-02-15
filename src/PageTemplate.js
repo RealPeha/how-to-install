@@ -29,12 +29,14 @@ const PageTemplate = ({ data, pageContext }) => {
 				<div className="install-guide">
 					<div
 						className="install-guide-content"
+						// eslint-disable-next-line react/no-danger
 						dangerouslySetInnerHTML={{ __html: html }}
 					/>
 					<div className="footer">
 						<a
 							href={`https://github.com/RealPeha/how-to-install/edit/master/src/markdown/${slug}.md`}
 							target="_blank"
+							rel="noreferrer"
 						>
 							Edit this page on GitHub
 						</a>
