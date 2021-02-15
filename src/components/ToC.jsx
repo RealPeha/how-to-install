@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import Slugger from 'github-slugger'
 
 const ToC = ({ headings, maxDepth = 1 }) => {
@@ -19,9 +18,9 @@ const ToC = ({ headings, maxDepth = 1 }) => {
 						const slug = slugger.slug(value)
 
 						return (
-							<Link key={slug} to={`#${slug}`}>
+							<a key={slug} href={`#${slug}`}>
 								{value}
-							</Link>
+							</a>
 						)
 					})}
 				</div>
