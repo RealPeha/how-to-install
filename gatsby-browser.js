@@ -1,2 +1,2 @@
 import 'prismjs/themes/prism-tomorrow.css'
-import './src/style.css'
+import './src/css/style.css'
