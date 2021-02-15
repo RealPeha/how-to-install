@@ -108,7 +108,7 @@ a {
 	margin-bottom: 20px;
 	text-align: center;
 	letter-spacing: -0.055em;
-  }
+}
 
 .suggestions {
     position: absolute;
@@ -289,71 +289,6 @@ a {
 	color: #fff;
 }
 
-@media (max-width: 1320px) {
-	.toc {
-		left: 0;
-	}
-	
-	.toc-menu {
-		right: auto;
-		left: -170px;
-	}
-
-	.toc-open {
-		left: 0;
-	}
-	
-	.toc-wrapper:hover .toc-menu {
-		left: 0;
-	}
-	
-	.toc-wrapper:hover .toc-open {
-		left: -23px;
-	}
-}
-
-@media (max-width: 550px) {
-	.header h1 {
-		font-size: 4rem;
-	}
-}
-
-@media (max-width: 450px) {
-	.header h1 {
-		font-size: 3.5rem;
-	}
-
-	.input-wrapper input[type="text"] {
-		font-size: 1.3rem;
-	}
-
-	.install-guide h1 {
-		font-size: 1.7rem;
-	}
-
-	.install-guide h2 {
-		font-size: 1.2rem;
-	}
-}
-
-@media (max-width: 400px) {
-	.header h1 {
-		font-size: 3rem;
-	}
-
-	.header h2 {
-		font-size: 1.5rem;
-	}
-
-	.input-wrapper input[type="text"] {
-		font-size: 1.3rem;
-	}
-
-	.input-wrapper input[type="submit"] {
-		font-size: 1rem;
-	}
-}
-
 .line-wrapper {
 	display: flex;
 	white-space: normal;
@@ -410,4 +345,76 @@ a {
 
 .theme.collapsed {
     top: 0 !important;
+}
+
+@media (max-width: 1320px) {
+	.toc-wrapper .toc {
+		position: fixed;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		z-index: 5;
+	}
+	
+	.toc-wrapper .toc-menu {
+		position: absolute;
+		right: 0;
+		left: -170px;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	
+	.toc-wrapper:hover .toc-menu, .toc-open {
+		left: 0;
+	}
+	
+	.toc-wrapper:hover .toc-open {
+		left: -23px;
+	}
+}
+
+@media (max-width: 550px) {
+	.header h1 {
+		font-size: 4rem;
+	}
+}
+
+@media (max-width: 450px) {
+	.header h1 {
+		font-size: 3.5rem;
+	}
+
+	.input-wrapper input[type="text"] {
+		font-size: 1.3rem;
+	}
+
+	.install-guide h1 {
+		font-size: 1.7rem;
+	}
+
+	.install-guide h2 {
+		font-size: 1.2rem;
+	}
+
+	.line-wrapper {
+		white-space: nowrap;
+	}
+}
+
+@media (max-width: 400px) {
+	.header h1 {
+		font-size: 3rem;
+	}
+
+	.header h2 {
+		font-size: 1.5rem;
+	}
+
+	.input-wrapper input[type="text"] {
+		font-size: 1.3rem;
+	}
+
+	.input-wrapper input[type="submit"] {
+		font-size: 1rem;
+	}
 }
