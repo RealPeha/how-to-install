@@ -11,10 +11,15 @@ const titles = {
 	Yes: 'YES!',
 }
 
-const HeaderSearch = ({ pages = [], query = '', className = '' }) => {
+const HeaderSearch = ({
+	pages = [],
+	query = '',
+	page,
+	className = '',
+}) => {
 	const [buttonTitle, setButtonTitle] = useState(titles.This)
 	const [inputPlaceholder, setInputPlaceholder] = useState(titles.MaybeThis)
-	const [inputValue, setInputValue] = useState(query)
+	const [inputValue, setInputValue] = useState('')
 	const [inputMaybeValue, setInputMaybeValue] = useState('')
 	const [suggestions, setSuggestions] = useState([])
 
@@ -109,8 +114,19 @@ const HeaderSearch = ({ pages = [], query = '', className = '' }) => {
 	return (
 		<div className={classes(['header-wrapper', className])}>
 			<div className="header">
-				<h1>What do you want to install?</h1>
-				<h2>I want to install...</h2>
+				{page
+					? (
+						<>
+							<h1>{`How to install ${page.title}`}</h1>
+							<h2>Or maybe you want to install...</h2>
+						</>
+					)
+					: (
+						<>
+							<h1>What do you want to install?</h1>
+							<h2>I want to install...</h2>
+						</>
+					)}
 				<form className="input-wrapper" onSubmit={handleSubmit}>
 					<input
 						type="text"

@@ -21,6 +21,7 @@ const PageTemplate = ({ data, pageContext }) => {
 			<HeaderSearch
 				pages={pages}
 				query={slug}
+				page={meta}
 				className="disable-flex-grow"
 			/>
 
