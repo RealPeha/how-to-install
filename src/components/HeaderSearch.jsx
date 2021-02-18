@@ -105,8 +105,6 @@ const HeaderSearch = ({
 
 			if (foundPages.length === 1) {
 				navigate(foundPages[0].slug)
-			} else {
-				// navigate(`/search?q=${tool}`)
 			}
 		}
 	}
