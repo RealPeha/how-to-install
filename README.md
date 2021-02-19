@@ -1,4 +1,4 @@
-# [How to install](https://peha.fun/how-to-install) - Collection of Install Tutorials
+# [How to install](https://peha.fun/how-to-install) - The collection of Install Tutorials
 
 This project is a collection of instructions for installing programs and utilities for Linux, Windows, MacOS, etc.
 
