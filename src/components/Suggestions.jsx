@@ -4,11 +4,12 @@ import { navigate, Link } from 'gatsby'
 import clamp from '../utils/clamp'
 import classes from '../utils/classes'
 
-const Suggestion = ({ item, isActive }) => {
+const Suggestion = ({ item, isActive, onHover }) => {
 	return (
 		<Link
 			to={item.slug}
 			className={classes(['suggestion', isActive && 'active'])}
+			onMouseEnter={onHover}
 		>
 			{item.title}
 		</Link>
@@ -17,6 +18,10 @@ const Suggestion = ({ item, isActive }) => {
 
 const Suggestions = ({ items }) => {
 	const [activeSuggestion, setActiveSuggestion] = useState(-1)
+
+	const handleHover = React.useCallback(index => () => {
+		setActiveSuggestion(index)
+	}, [])
 
 	useEffect(() => {
 		setActiveSuggestion(-1)
@@ -51,6 +56,7 @@ const Suggestions = ({ items }) => {
 					key={item.slug}
 					item={item}
 					isActive={index === activeSuggestion}
+					onHover={handleHover(index)}
 				/>
 			))}
 		</div>

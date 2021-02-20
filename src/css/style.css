@@ -123,6 +123,8 @@ a {
 	z-index: 1;
 	left: 50%;
     transform: translateX(-50%);
+	max-height: 200px;
+    overflow: auto;
 }
 
 .suggestion {
@@ -142,11 +144,6 @@ a {
 
 .suggestion:last-child {
 	border-radius: 0 0 5px 5px;
-}
-
-.suggestion:hover {
-	font-weight: bold;
-	background-color: var(--suggestions-item-color-hover, #e4e4e4);
 }
 
 .input-wrapper {
@@ -416,5 +413,11 @@ a {
 
 	.input-wrapper input[type="submit"] {
 		font-size: 1rem;
+	}
+}
+
+@media (max-height: 700px) {
+	.suggestions {
+		max-height: 120px;
 	}
 }

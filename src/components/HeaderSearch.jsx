@@ -5,11 +5,13 @@ import classes from '../utils/classes'
 
 import Suggestions from './Suggestions'
 
-const titles = {
+const TITLES = {
 	MaybeThis: 'Maybe this...',
 	This: 'THIS',
 	Yes: 'YES!',
 }
+
+const SUGGESTIONS_VISIBLE_COUNT = 10
 
 const HeaderSearch = ({
 	pages = [],
@@ -17,8 +19,8 @@ const HeaderSearch = ({
 	page,
 	className = '',
 }) => {
-	const [buttonTitle, setButtonTitle] = useState(titles.This)
-	const [inputPlaceholder, setInputPlaceholder] = useState(titles.MaybeThis)
+	const [buttonTitle, setButtonTitle] = useState(TITLES.This)
+	const [inputPlaceholder, setInputPlaceholder] = useState(TITLES.MaybeThis)
 	const [inputValue, setInputValue] = useState('')
 	const [inputMaybeValue, setInputMaybeValue] = useState('')
 	const [suggestions, setSuggestions] = useState([])
@@ -43,7 +45,7 @@ const HeaderSearch = ({
 				.some(keyword => keyword.trim().toLowerCase().indexOf(value) > -1) && page.slug !== `/${query}`
 		))
 
-		foundPages.length = Math.min(foundPages.length, 5)
+		foundPages.length = Math.min(foundPages.length, SUGGESTIONS_VISIBLE_COUNT)
 
 		return foundPages
 	}
@@ -58,12 +60,12 @@ const HeaderSearch = ({
 
 			setInputMaybeValue(randomTool)
 			setInputPlaceholder(`${randomTool}?`)
-			setButtonTitle(titles.Yes)
+			setButtonTitle(TITLES.Yes)
 		}
 	}
 
 	const handleInputBlur = e => {
-		setButtonTitle(titles.This)
+		setButtonTitle(TITLES.This)
 
 		if (
 			inputValue
@@ -72,7 +74,7 @@ const HeaderSearch = ({
 			setSuggestions([])
 		} else if (!e.relatedTarget || e.relatedTarget.id !== 'find') {
 			setInputMaybeValue('')
-			setInputPlaceholder(titles.MaybeThis)
+			setInputPlaceholder(TITLES.MaybeThis)
 		}
 	}
 
@@ -83,14 +85,14 @@ const HeaderSearch = ({
 			const foundPages = findPages(e.target.value)
 
 			setSuggestions(foundPages)
-			setButtonTitle(titles.This)
+			setButtonTitle(TITLES.This)
 		} else {
 			setSuggestions([])
 
-			if (inputPlaceholder === titles.MaybeThis) {
-				setButtonTitle(titles.This)
+			if (inputPlaceholder === TITLES.MaybeThis) {
+				setButtonTitle(TITLES.This)
 			} else {
-				setButtonTitle(titles.Yes)
+				setButtonTitle(TITLES.Yes)
 			}
 		}
 	}
