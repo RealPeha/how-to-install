@@ -1,7 +1,7 @@
 ---
 slug: '/homebrew'
 title: 'Homebrew'
-keywords: 'homebrew, mac, macos'
+keywords: 'homebrew'
 ---
 
 # macOS
@@ -11,5 +11,5 @@ keywords: 'homebrew, mac, macos'
 ## # Using curl
 
 ```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+/bin/bash -c "$(@curl@ -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
