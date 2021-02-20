@@ -67,12 +67,16 @@ const HeaderSearch = ({
 	const handleInputBlur = e => {
 		setButtonTitle(TITLES.This)
 
+		const relatedTarget = e.relatedTarget
+			|| e.explicitOriginalTarget
+			|| document.activeElement
+
 		if (
 			inputValue
-			&& (!e.relatedTarget || !e.relatedTarget.className.includes('suggestion'))
+			&& (!relatedTarget || !relatedTarget.className.includes('suggestion'))
 		) {
 			setSuggestions([])
-		} else if (!e.relatedTarget || e.relatedTarget.id !== 'find') {
+		} else if (!relatedTarget || relatedTarget.id !== 'find') {
 			setInputMaybeValue('')
 			setInputPlaceholder(TITLES.MaybeThis)
 		}

@@ -10,6 +10,7 @@ const Suggestion = ({ item, isActive, onHover }) => {
 			to={item.slug}
 			className={classes(['suggestion', isActive && 'active'])}
 			onMouseEnter={onHover}
+			tabIndex="0"
 		>
 			{item.title}
 		</Link>
