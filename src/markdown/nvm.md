@@ -4,11 +4,11 @@ title: 'nvm'
 keywords: 'node, nodejs, nvm'
 ---
 
-# Ubuntu 20.04
+# Common
 
 ---
 
-## # Using install script
+## # Using installer
 
 ```bash
 @curl@ -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash

@@ -4,11 +4,16 @@ title: 'Atom'
 keywords: 'Atom, ide'
 ---
 
-# Ubuntu / Debian
-
+# Windows / Linux / macOS
 ---
+## # Using installer
+Download the latest Atom from [atom.io](https://atom.io/)
 
-## # Using apt
+<br />
+
+# Linux
+---
+## # Using snap
 
 ```bash
 sudo @snap@ install atom --classic

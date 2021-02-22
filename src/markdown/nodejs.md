@@ -34,16 +34,16 @@ cd ~
 sudo bash nodesource_setup.sh
 ```
 
-## # Using snap
-```bash
-sudo @snap@ install node --classic --channel=14 # For example, install Node.js 14
-```
-
 Install Node.js
 
 ```bash
 sudo apt install nodejs
 nodejs -v # Check that the install was successful
+```
+
+## # Using snap
+```bash
+sudo @snap@ install node --classic --channel=14 # For example, install Node.js 14
 ```
 
 <br />
@@ -64,6 +64,19 @@ sudo @snap@ install node --classic --channel=14 # For example, install Node.js 1
 
 <br />
 
+# CentOS 7
+
+## # Using a NodeSource PPA
+```bash
+curl -sL https://rpm.nodesource.com/setup_10.x | sudo bash -
+sudo yum install nodejs
+node --version # Check that the install was successful
+```
+
+Or install using [nvm](/nvm)
+
+<br />
+
 # Windows
 
 ## # Using installer ⭐
@@ -71,14 +84,14 @@ Download the Windows Installer directly from the nodejs.org web site.
 
 ## # Using choco
 ```bash
-choco install nodejs
+@choco chocolatey@ install nodejs
 # or full install with npm
-choco install nodejs.install
+@choco chocolatey@ install nodejs.install
 ```
 
 ## # Using scoop
 ```bash
-scoop install nodejs
+@scoop@ install nodejs
 ```
 
 # FreeBSD
@@ -92,7 +105,7 @@ pkg install node
 Or compile it on your own using ports:
 ```bash
 cd /usr/ports/www/node
-make install
+@make build-essential@ install
 ```
 
 <br />
@@ -147,7 +160,7 @@ pkgin -y install nodejs
 ```
 Or build manually
 ```bash
-cd pkgsrc/lang/nodejs && bmake install
+cd pkgsrc/lang/nodejs && @bmake@ install
 ```
 
 <br />

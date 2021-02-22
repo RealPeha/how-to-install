@@ -8,7 +8,7 @@ keywords: 'yarn'
 
 ---
 
-## # Via npm
+## # Using npm
 
 ```bash
 @npm@ install --global yarn
@@ -21,10 +21,8 @@ yarn --version # Check that the install was successful
 
 ---
 
-## # Via apt
-
+## # Using apt
 Import the repository’s GPG key and add the Yarn APT repository to your system
-
 ```bash
 @curl@ -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
