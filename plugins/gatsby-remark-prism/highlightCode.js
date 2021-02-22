@@ -27,7 +27,7 @@ const highlightCode = (language, code) => {
 				<div class='line-wrapper'>
 					${
 						cleanLine && showCopyButton
-							? `<div class='copy-button' title='Copy' onClick='copyToClipboard(\`${cleanLine}\`)'></div>`
+							? `<div class='copy-button' title='Copy' onClick='copyToClipboard(\`${Buffer.from(cleanLine).toString('base64')}\`)'></div>`
 							: ''
 					}
 					<div>${lineWithLinks}</div>
