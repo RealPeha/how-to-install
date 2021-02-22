@@ -48,18 +48,31 @@
         }
       }
     })
-  </script><link as="script" rel="preload" href="/how-to-install/webpack-runtime-24865874ef4ee231badf.js"/><link as="script" rel="preload" href="/how-to-install/styles-c4fa86dfd4ad05097eee.js"/><link as="script" rel="preload" href="/how-to-install/framework-c01a0bd4b9d4919906bb.js"/><link as="script" rel="preload" href="/how-to-install/app-4ffacc5bb05edfdfa3b1.js"/><link as="script" rel="preload" href="/how-to-install/component---src-page-template-js-7505e998c6d7c822236e.js"/><link as="fetch" rel="preload" href="/how-to-install/page-data/nodejs/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/how-to-install/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="page-wrapper light"><div class="header-wrapper disable-flex-grow"><div class="header"><h1>How to install Node.js</h1><h2>Or maybe you want to install...</h2><form class="input-wrapper"><input type="text" value="" placeholder="Maybe this..." autoComplete="off"/><input type="submit" value="THIS" id="find"/></form><div class="suggestions" id="suggestions"></div></div></div><div class="install-guide-wrapper"><div class="toc-wrapper"></div><div class="install-guide"><div class="install-guide-content"><h1 id="ubuntu-2004" style="position:relative;">Ubuntu 20.04<a href="#ubuntu-2004" aria-label="ubuntu 2004 permalink" class="anchor after"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h1>
+  </script><link as="script" rel="preload" href="/how-to-install/webpack-runtime-24865874ef4ee231badf.js"/><link as="script" rel="preload" href="/how-to-install/styles-c4fa86dfd4ad05097eee.js"/><link as="script" rel="preload" href="/how-to-install/framework-c01a0bd4b9d4919906bb.js"/><link as="script" rel="preload" href="/how-to-install/app-d2cd0fa94536f1574f3c.js"/><link as="script" rel="preload" href="/how-to-install/component---src-page-template-js-7505e998c6d7c822236e.js"/><link as="fetch" rel="preload" href="/how-to-install/page-data/nodejs/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/how-to-install/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="page-wrapper light"><div class="header-wrapper disable-flex-grow"><div class="header"><h1>How to install Node.js</h1><h2>Or maybe you want to install...</h2><form class="input-wrapper"><input type="text" value="" placeholder="Maybe this..." autoComplete="off"/><input type="submit" value="THIS" id="find"/></form><div class="suggestions" id="suggestions"></div></div></div><div class="install-guide-wrapper"><div class="toc-wrapper"><div class="toc"><div class="toc-menu"><a href="#ubuntu--debian">Ubuntu / Debian</a><a href="#centos-8--rhel-8--fedora">CentOS 8 / RHEL 8 / Fedora</a><a href="#centos-7">CentOS 7</a><a href="#windows">Windows</a><a href="#freebsd">FreeBSD</a><a href="#gentoo">Gentoo</a><a href="#arch-linux">Arch Linux</a><a href="#macos">macOS</a><a href="#android">Android</a></div></div><div class="toc-open">Table of Contents</div></div><div class="install-guide"><div class="install-guide-content"><h1 id="ubuntu--debian" style="position:relative;">Ubuntu / Debian<a href="#ubuntu--debian" aria-label="ubuntu  debian permalink" class="anchor after"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h1>
 <hr>
+<h2 id="-using-nvm-" style="position:relative;"># Using nvm ⭐<a href="#-using-nvm-" aria-label=" using nvm  permalink" class="anchor after"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h2>
+<div class='gatsby-highlight'>
+				<pre class='language-bash'><code><div class='line-wrapper'>
+					<div class='copy-button' title='Copy' onClick='copyToClipboard(`bnZtIGxpc3QtcmVtb3Rl`)'></div>
+					<div><a href="nvm" title="How to install nvm">nvm</a> list-remote</div>
+				</div><div class='line-wrapper'>
+					<div class='copy-button' title='Copy' onClick='copyToClipboard(`bnZtIGluc3RhbGwgdjE0LjAuMCA=`)'></div>
+					<div><a href="nvm" title="How to install nvm">nvm</a> <span class="token function">install</span> v14.0.0 <span class="token comment"># Install Node.js v.14.0.0 for example</span></div>
+				</div><div class='line-wrapper'>
+					<div class='copy-button' title='Copy' onClick='copyToClipboard(`bnZtIHVzZSB2MTQuMC4wIA==`)'></div>
+					<div><a href="nvm" title="How to install nvm">nvm</a> use v14.0.0 <span class="token comment"># Switch to v14.0.0 version</span></div>
+				</div></code></pre>
+			</div>
 <h2 id="-from-the-default-repositories" style="position:relative;"># From the Default Repositories<a href="#-from-the-default-repositories" aria-label=" from the default repositories permalink" class="anchor after"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h2>
 <div class='gatsby-highlight'>
 				<pre class='language-bash'><code><div class='line-wrapper'>
-					<div class='copy-button' title='Copy' onClick='copyToClipboard(`sudo apt update `)'></div>
+					<div class='copy-button' title='Copy' onClick='copyToClipboard(`c3VkbyBhcHQgdXBkYXRlIA==`)'></div>
 					<div><span class="token function">sudo</span> <span class="token function">apt</span> update <span class="token comment"># Refresh your local package index</span></div>
 				</div><div class='line-wrapper'>
-					<div class='copy-button' title='Copy' onClick='copyToClipboard(`sudo apt install nodejs `)'></div>
+					<div class='copy-button' title='Copy' onClick='copyToClipboard(`c3VkbyBhcHQgaW5zdGFsbCBub2RlanMg`)'></div>
 					<div><span class="token function">sudo</span> <span class="token function">apt</span> <span class="token function">install</span> nodejs <span class="token comment"># Install Node.js</span></div>
 				</div><div class='line-wrapper'>
-					<div class='copy-button' title='Copy' onClick='copyToClipboard(`nodejs -v `)'></div>
+					<div class='copy-button' title='Copy' onClick='copyToClipboard(`bm9kZWpzIC12IA==`)'></div>
 					<div>nodejs -v <span class="token comment"># Check that the install was successful</span></div>
 				</div></code></pre>
 			</div>
@@ -67,36 +80,187 @@
 <p>Install the PPA</p>
 <div class='gatsby-highlight'>
 				<pre class='language-bash'><code><div class='line-wrapper'>
-					<div class='copy-button' title='Copy' onClick='copyToClipboard(`cd ~`)'></div>
+					<div class='copy-button' title='Copy' onClick='copyToClipboard(`Y2Qgfg==`)'></div>
 					<div><span class="token builtin class-name">cd</span> ~</div>
 				</div><div class='line-wrapper'>
-					<div class='copy-button' title='Copy' onClick='copyToClipboard(`curl -sL https://deb.nodesource.com/setup_14.x -o nodesource_setup.sh`)'></div>
-					<div><a href="curl" title="How to install curl">curl</a> -sL https://deb.nodesource.com/setup_14.x -o nodesource_setup.sh</div>
+					<div class='copy-button' title='Copy' onClick='copyToClipboard(`Y3VybCAtc0wgaHR0cHM6Ly9kZWIubm9kZXNvdXJjZS5jb20vc2V0dXBfMTQueCAtbyBub2Rlc291cmNlX3NldHVwLnNoIA==`)'></div>
+					<div><a href="curl" title="How to install curl">curl</a> -sL https://deb.nodesource.com/setup_14.x -o nodesource_setup.sh <span class="token comment"># For example, install Node.js 14</span></div>
 				</div><div class='line-wrapper'>
-					<div class='copy-button' title='Copy' onClick='copyToClipboard(`sudo bash nodesource_setup.sh`)'></div>
+					<div class='copy-button' title='Copy' onClick='copyToClipboard(`c3VkbyBiYXNoIG5vZGVzb3VyY2Vfc2V0dXAuc2g=`)'></div>
 					<div><span class="token function">sudo</span> <span class="token function">bash</span> nodesource_setup.sh</div>
 				</div></code></pre>
 			</div>
 <p>Install Node.js</p>
 <div class='gatsby-highlight'>
 				<pre class='language-bash'><code><div class='line-wrapper'>
-					<div class='copy-button' title='Copy' onClick='copyToClipboard(`sudo apt install nodejs`)'></div>
+					<div class='copy-button' title='Copy' onClick='copyToClipboard(`c3VkbyBhcHQgaW5zdGFsbCBub2RlanM=`)'></div>
 					<div><span class="token function">sudo</span> <span class="token function">apt</span> <span class="token function">install</span> nodejs</div>
 				</div><div class='line-wrapper'>
-					<div class='copy-button' title='Copy' onClick='copyToClipboard(`nodejs -v `)'></div>
+					<div class='copy-button' title='Copy' onClick='copyToClipboard(`bm9kZWpzIC12IA==`)'></div>
 					<div>nodejs -v <span class="token comment"># Check that the install was successful</span></div>
 				</div></code></pre>
 			</div>
-<h2 id="-using-node-source-control" style="position:relative;"># Using Node Source Control<a href="#-using-node-source-control" aria-label=" using node source control permalink" class="anchor after"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h2>
+<h2 id="-using-snap" style="position:relative;"># Using snap<a href="#-using-snap" aria-label=" using snap permalink" class="anchor after"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h2>
 <div class='gatsby-highlight'>
 				<pre class='language-bash'><code><div class='line-wrapper'>
-					<div class='copy-button' title='Copy' onClick='copyToClipboard(`nvm list-remote`)'></div>
-					<div><a href="nvm" title="How to install nvm">nvm</a> list-remote</div>
-				</div><div class='line-wrapper'>
-					<div class='copy-button' title='Copy' onClick='copyToClipboard(`nvm install v14.0.0 `)'></div>
-					<div><a href="nvm" title="How to install nvm">nvm</a> <span class="token function">install</span> v14.0.0 <span class="token comment"># Install Node.js v.14.0.0 for example</span></div>
-				</div><div class='line-wrapper'>
-					<div class='copy-button' title='Copy' onClick='copyToClipboard(`nvm use v14.0.0 `)'></div>
-					<div><a href="nvm" title="How to install nvm">nvm</a> use v14.0.0 <span class="token comment"># Switch to v14.0.0 version</span></div>
+					<div class='copy-button' title='Copy' onClick='copyToClipboard(`c3VkbyBzbmFwIGluc3RhbGwgbm9kZSAtLWNsYXNzaWMgLS1jaGFubmVsPTE0IA==`)'></div>
+					<div><span class="token function">sudo</span> <a href="snap" title="How to install snap">snap</a> <span class="token function">install</span> node --classic --channel<span class="token operator">=</span><span class="token number">14</span> <span class="token comment"># For example, install Node.js 14</span></div>
 				</div></code></pre>
-			</div></div><div class="footer"><a href="https://github.com/RealPeha/how-to-install/edit/master/src/markdown/nodejs.md" target="_blank" rel="noreferrer">Edit this page on GitHub</a></div></div><div class="empty-column"></div></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/nodejs";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-92b076c0eec7a7a7a6c5.js"],"app":["/app-4ffacc5bb05edfdfa3b1.js"],"component---src-page-template-js":["/component---src-page-template-js-7505e998c6d7c822236e.js"],"component---src-pages-index-jsx":["/component---src-pages-index-jsx-17c1fa3adcce5b0cd00c.js"]};/*]]>*/</script><script src="/how-to-install/polyfill-92b076c0eec7a7a7a6c5.js" nomodule=""></script><script src="/how-to-install/component---src-page-template-js-7505e998c6d7c822236e.js" async=""></script><script src="/how-to-install/app-4ffacc5bb05edfdfa3b1.js" async=""></script><script src="/how-to-install/framework-c01a0bd4b9d4919906bb.js" async=""></script><script src="/how-to-install/styles-c4fa86dfd4ad05097eee.js" async=""></script><script src="/how-to-install/webpack-runtime-24865874ef4ee231badf.js" async=""></script></body></html>
+			</div>
+<br />
+<h1 id="centos-8--rhel-8--fedora" style="position:relative;">CentOS 8 / RHEL 8 / Fedora<a href="#centos-8--rhel-8--fedora" aria-label="centos 8  rhel 8  fedora permalink" class="anchor after"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h1>
+<h2 id="-using-dnf" style="position:relative;"># Using dnf<a href="#-using-dnf" aria-label=" using dnf permalink" class="anchor after"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h2>
+<div class='gatsby-highlight'>
+				<pre class='language-bash'><code><div class='line-wrapper'>
+					<div class='copy-button' title='Copy' onClick='copyToClipboard(`ZG5mIG1vZHVsZSBpbnN0YWxsIG5vZGVqczombHQ7c3RyZWFtPg==`)'></div>
+					<div>dnf module <span class="token function">install</span> nodejs:<span class="token operator">&lt;</span>stream<span class="token operator">></span></div>
+				</div><div class='line-wrapper'>
+					<div class='copy-button' title='Copy' onClick='copyToClipboard(`ZG5mIG1vZHVsZSBsaXN0IG5vZGVqcyA=`)'></div>
+					<div>dnf module list nodejs <span class="token comment"># See a list of available streams</span></div>
+				</div><div class='line-wrapper'>
+					<div class='copy-button' title='Copy' onClick='copyToClipboard(`ZG5mIG1vZHVsZSBpbnN0YWxsIG5vZGVqczoxMiA=`)'></div>
+					<div>dnf module <span class="token function">install</span> nodejs:12 <span class="token comment"># For example, install Node.js 12</span></div>
+				</div></code></pre>
+			</div>
+<h2 id="-using-snap-1" style="position:relative;"># Using snap<a href="#-using-snap-1" aria-label=" using snap 1 permalink" class="anchor after"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h2>
+<div class='gatsby-highlight'>
+				<pre class='language-bash'><code><div class='line-wrapper'>
+					<div class='copy-button' title='Copy' onClick='copyToClipboard(`c3VkbyBzbmFwIGluc3RhbGwgbm9kZSAtLWNsYXNzaWMgLS1jaGFubmVsPTE0IA==`)'></div>
+					<div><span class="token function">sudo</span> <a href="snap" title="How to install snap">snap</a> <span class="token function">install</span> node --classic --channel<span class="token operator">=</span><span class="token number">14</span> <span class="token comment"># For example, install Node.js 14</span></div>
+				</div></code></pre>
+			</div>
+<br />
+<h1 id="centos-7" style="position:relative;">CentOS 7<a href="#centos-7" aria-label="centos 7 permalink" class="anchor after"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h1>
+<h2 id="-using-a-nodesource-ppa-1" style="position:relative;"># Using a NodeSource PPA<a href="#-using-a-nodesource-ppa-1" aria-label=" using a nodesource ppa 1 permalink" class="anchor after"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h2>
+<div class='gatsby-highlight'>
+				<pre class='language-bash'><code><div class='line-wrapper'>
+					<div class='copy-button' title='Copy' onClick='copyToClipboard(`Y3VybCAtc0wgaHR0cHM6Ly9ycG0ubm9kZXNvdXJjZS5jb20vc2V0dXBfMTAueCB8IHN1ZG8gYmFzaCAt`)'></div>
+					<div><span class="token function">curl</span> -sL https://rpm.nodesource.com/setup_10.x <span class="token operator">|</span> <span class="token function">sudo</span> <span class="token function">bash</span> -</div>
+				</div><div class='line-wrapper'>
+					<div class='copy-button' title='Copy' onClick='copyToClipboard(`c3VkbyB5dW0gaW5zdGFsbCBub2RlanM=`)'></div>
+					<div><span class="token function">sudo</span> yum <span class="token function">install</span> nodejs</div>
+				</div><div class='line-wrapper'>
+					<div class='copy-button' title='Copy' onClick='copyToClipboard(`bm9kZSAtLXZlcnNpb24g`)'></div>
+					<div>node --version <span class="token comment"># Check that the install was successful</span></div>
+				</div></code></pre>
+			</div>
+<p>Or install using <a href="/nvm">nvm</a></p>
+<br />
+<h1 id="windows" style="position:relative;">Windows<a href="#windows" aria-label="windows permalink" class="anchor after"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h1>
+<h2 id="-using-installer-" style="position:relative;"># Using installer ⭐<a href="#-using-installer-" aria-label=" using installer  permalink" class="anchor after"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h2>
+<p>Download the Windows Installer directly from the nodejs.org web site.</p>
+<h2 id="-using-choco" style="position:relative;"># Using choco<a href="#-using-choco" aria-label=" using choco permalink" class="anchor after"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h2>
+<div class='gatsby-highlight'>
+				<pre class='language-bash'><code><div class='line-wrapper'>
+					<div class='copy-button' title='Copy' onClick='copyToClipboard(`Y2hvY28gaW5zdGFsbCBub2RlanM=`)'></div>
+					<div><a href="chocolatey" title="How to install choco">choco</a> <span class="token function">install</span> nodejs</div>
+				</div><div class='line-wrapper'>
+					
+					<div><span class="token comment"># or full install with npm</span></div>
+				</div><div class='line-wrapper'>
+					<div class='copy-button' title='Copy' onClick='copyToClipboard(`Y2hvY28gaW5zdGFsbCBub2RlanMuaW5zdGFsbA==`)'></div>
+					<div><a href="chocolatey" title="How to install choco">choco</a> <span class="token function">install</span> nodejs.install</div>
+				</div></code></pre>
+			</div>
+<h2 id="-using-scoop" style="position:relative;"># Using scoop<a href="#-using-scoop" aria-label=" using scoop permalink" class="anchor after"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h2>
+<div class='gatsby-highlight'>
+				<pre class='language-bash'><code><div class='line-wrapper'>
+					<div class='copy-button' title='Copy' onClick='copyToClipboard(`c2Nvb3AgaW5zdGFsbCBub2RlanM=`)'></div>
+					<div><a href="scoop" title="How to install scoop">scoop</a> <span class="token function">install</span> nodejs</div>
+				</div></code></pre>
+			</div>
+<h1 id="freebsd" style="position:relative;">FreeBSD<a href="#freebsd" aria-label="freebsd permalink" class="anchor after"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h1>
+<hr>
+<h2 id="-using-pkg" style="position:relative;"># Using pkg<a href="#-using-pkg" aria-label=" using pkg permalink" class="anchor after"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h2>
+<div class='gatsby-highlight'>
+				<pre class='language-bash'><code><div class='line-wrapper'>
+					<div class='copy-button' title='Copy' onClick='copyToClipboard(`cGtnIGluc3RhbGwgbm9kZQ==`)'></div>
+					<div>pkg <span class="token function">install</span> node</div>
+				</div></code></pre>
+			</div>
+<p>Or compile it on your own using ports:</p>
+<div class='gatsby-highlight'>
+				<pre class='language-bash'><code><div class='line-wrapper'>
+					<div class='copy-button' title='Copy' onClick='copyToClipboard(`Y2QgL3Vzci9wb3J0cy93d3cvbm9kZQ==`)'></div>
+					<div><span class="token builtin class-name">cd</span> /usr/ports/www/node</div>
+				</div><div class='line-wrapper'>
+					<div class='copy-button' title='Copy' onClick='copyToClipboard(`bWFrZSBpbnN0YWxs`)'></div>
+					<div><a href="build-essential" title="How to install make">make</a> <span class="token function">install</span></div>
+				</div></code></pre>
+			</div>
+<br />
+<h1 id="gentoo" style="position:relative;">Gentoo<a href="#gentoo" aria-label="gentoo permalink" class="anchor after"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h1>
+<hr>
+<h2 id="-using-emerge" style="position:relative;"># Using emerge<a href="#-using-emerge" aria-label=" using emerge permalink" class="anchor after"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h2>
+<div class='gatsby-highlight'>
+				<pre class='language-bash'><code><div class='line-wrapper'>
+					<div class='copy-button' title='Copy' onClick='copyToClipboard(`ZW1lcmdlIG5vZGVqcw==`)'></div>
+					<div>emerge nodejs</div>
+				</div></code></pre>
+			</div>
+<h1 id="arch-linux" style="position:relative;">Arch Linux<a href="#arch-linux" aria-label="arch linux permalink" class="anchor after"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h1>
+<hr>
+<h2 id="-using-pacman" style="position:relative;"># Using pacman<a href="#-using-pacman" aria-label=" using pacman permalink" class="anchor after"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h2>
+<div class='gatsby-highlight'>
+				<pre class='language-bash'><code><div class='line-wrapper'>
+					<div class='copy-button' title='Copy' onClick='copyToClipboard(`cGFjbWFuIC1TIG5vZGVqcw==`)'></div>
+					<div>pacman -S nodejs</div>
+				</div></code></pre>
+			</div>
+<br />
+<h1 id="macos" style="position:relative;">macOS<a href="#macos" aria-label="macos permalink" class="anchor after"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h1>
+<hr>
+<h2 id="-using-installer" style="position:relative;"># Using installer<a href="#-using-installer" aria-label=" using installer permalink" class="anchor after"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h2>
+<div class='gatsby-highlight'>
+				<pre class='language-bash'><code><div class='line-wrapper'>
+					<div class='copy-button' title='Copy' onClick='copyToClipboard(`Y3VybCAiaHR0cHM6Ly9ub2RlanMub3JnL2Rpc3QvbGF0ZXN0L25vZGUtJHtWRVJTSU9OOi0kKHdnZXQgLXFPLSBodHRwczovL25vZGVqcy5vcmcvZGlzdC9sYXRlc3QvIHwgc2VkIC1uRSAnc3wuKj5ub2RlLSguKilcLnBrZyZsdDsvYT4uKnxcMXxwJyl9LnBrZyIgPiAiJEhPTUUvRG93bmxvYWRzL25vZGUtbGF0ZXN0LnBrZyI=`)'></div>
+					<div><span class="token function">curl</span> <span class="token string">"https://nodejs.org/dist/latest/node-<span class="token variable">${VERSION<span class="token operator">:-</span>$(wget -qO- https<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>nodejs.org<span class="token operator">/</span>dist<span class="token operator">/</span>latest<span class="token operator">/</span> | sed -nE 's|.*>node-(.*)\.pkg&lt;<span class="token operator">/</span>a>.*|\1|p')}</span>.pkg"</span> <span class="token operator">></span> <span class="token string">"<span class="token environment constant">$HOME</span>/Downloads/node-latest.pkg"</span></div>
+				</div><div class='line-wrapper'>
+					<div class='copy-button' title='Copy' onClick='copyToClipboard(`c3VkbyBpbnN0YWxsZXIgLXN0b3JlIC1wa2cgIiRIT01FL0Rvd25sb2Fkcy9ub2RlLWxhdGVzdC5wa2ciIC10YXJnZXQgIi8i`)'></div>
+					<div><span class="token function">sudo</span> installer -store -pkg <span class="token string">"<span class="token environment constant">$HOME</span>/Downloads/node-latest.pkg"</span> -target <span class="token string">"/"</span></div>
+				</div></code></pre>
+			</div>
+<h2 id="-using-homebrew" style="position:relative;"># Using Homebrew<a href="#-using-homebrew" aria-label=" using homebrew permalink" class="anchor after"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h2>
+<div class='gatsby-highlight'>
+				<pre class='language-bash'><code><div class='line-wrapper'>
+					<div class='copy-button' title='Copy' onClick='copyToClipboard(`YnJldyBpbnN0YWxsIG5vZGU=`)'></div>
+					<div><a href="homebrew" title="How to install brew">brew</a> <span class="token function">install</span> node</div>
+				</div></code></pre>
+			</div>
+<h2 id="-using-macports" style="position:relative;"># Using MacPorts<a href="#-using-macports" aria-label=" using macports permalink" class="anchor after"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h2>
+<div class='gatsby-highlight'>
+				<pre class='language-bash'><code><div class='line-wrapper'>
+					<div class='copy-button' title='Copy' onClick='copyToClipboard(`cG9ydCBpbnN0YWxsIG5vZGVqcyZsdDttYWpvciB2ZXJzaW9uPg==`)'></div>
+					<div>port <span class="token function">install</span> nodejs<span class="token operator">&lt;</span>major version<span class="token operator">></span></div>
+				</div><div class='line-wrapper'>
+					
+					<div><span class="token comment"># Example</span></div>
+				</div><div class='line-wrapper'>
+					<div class='copy-button' title='Copy' onClick='copyToClipboard(`cG9ydCBpbnN0YWxsIG5vZGVqczc=`)'></div>
+					<div>port <span class="token function">install</span> nodejs7</div>
+				</div></code></pre>
+			</div>
+<h2 id="-using-pkgsrc" style="position:relative;"># Using pkgsrc<a href="#-using-pkgsrc" aria-label=" using pkgsrc permalink" class="anchor after"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h2>
+<p>Install the binary package</p>
+<div class='gatsby-highlight'>
+				<pre class='language-bash'><code><div class='line-wrapper'>
+					<div class='copy-button' title='Copy' onClick='copyToClipboard(`cGtnaW4gLXkgaW5zdGFsbCBub2RlanM=`)'></div>
+					<div>pkgin -y <span class="token function">install</span> nodejs</div>
+				</div></code></pre>
+			</div>
+<p>Or build manually</p>
+<div class='gatsby-highlight'>
+				<pre class='language-bash'><code><div class='line-wrapper'>
+					<div class='copy-button' title='Copy' onClick='copyToClipboard(`Y2QgcGtnc3JjL2xhbmcvbm9kZWpzICZhbXA7JmFtcDsgYm1ha2UgaW5zdGFsbA==`)'></div>
+					<div><span class="token builtin class-name">cd</span> pkgsrc/lang/nodejs <span class="token operator">&amp;&amp;</span> <a href="bmake" title="How to install bmake">bmake</a> <span class="token function">install</span></div>
+				</div></code></pre>
+			</div>
+<br />
+<h1 id="android" style="position:relative;">Android<a href="#android" aria-label="android permalink" class="anchor after"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h1>
+<h2 id="-using-termux-pkg" style="position:relative;"># Using Termux pkg<a href="#-using-termux-pkg" aria-label=" using termux pkg permalink" class="anchor after"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h2>
+<div class='gatsby-highlight'>
+				<pre class='language-bash'><code><div class='line-wrapper'>
+					<div class='copy-button' title='Copy' onClick='copyToClipboard(`cGtnIGluc3RhbGwgbm9kZWpzIA==`)'></div>
+					<div>pkg <span class="token function">install</span> nodejs <span class="token comment"># Install latest Node.js version</span></div>
+				</div></code></pre>
+			</div></div><div class="footer"><a href="https://github.com/RealPeha/how-to-install/edit/master/src/markdown/nodejs.md" target="_blank" rel="noreferrer">Edit this page on GitHub</a></div></div><div class="empty-column"></div></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/nodejs";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-92b076c0eec7a7a7a6c5.js"],"app":["/app-d2cd0fa94536f1574f3c.js"],"component---src-page-template-js":["/component---src-page-template-js-7505e998c6d7c822236e.js"],"component---src-pages-index-jsx":["/component---src-pages-index-jsx-17c1fa3adcce5b0cd00c.js"]};/*]]>*/</script><script src="/how-to-install/polyfill-92b076c0eec7a7a7a6c5.js" nomodule=""></script><script src="/how-to-install/component---src-page-template-js-7505e998c6d7c822236e.js" async=""></script><script src="/how-to-install/app-d2cd0fa94536f1574f3c.js" async=""></script><script src="/how-to-install/framework-c01a0bd4b9d4919906bb.js" async=""></script><script src="/how-to-install/styles-c4fa86dfd4ad05097eee.js" async=""></script><script src="/how-to-install/webpack-runtime-24865874ef4ee231badf.js" async=""></script></body></html>
