@@ -28,3 +28,16 @@ cd Python-3.6.0/
 sudo make altinstall
 python3 -V
 ```
+
+<br />
+
+# Linux Mint
+
+## # Using apt
+
+```bash
+apt update
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt install python3.9
+python3.9 -V
+```
