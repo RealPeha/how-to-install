@@ -19,3 +19,14 @@ sudo apt update
 apt-cache policy docker-ce
 sudo apt install docker-ce
 ```
+
+<br />
+
+# CentOS 8
+
+## # Using dnf
+
+```bash
+dnf config-manager --add-repo=https://download.docker.com/linux/centos/docker-ce.repo
+dnf install docker-ce
+```
