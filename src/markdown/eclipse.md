@@ -1,7 +1,7 @@
 ---
-slug: '/esclipse'
-title: 'Esclipse'
-keywords: 'esclipse'
+slug: '/eclipse'
+title: 'Eclipse'
+keywords: 'eclipse'
 ---
 
 # Ubuntu
